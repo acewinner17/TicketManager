@@ -10,6 +10,6 @@
         <tcpOptions soReuseAddr="true"/>
     </httpEndpoint>
 
-    <application name="TicketManagerApp" context-root="/TicketManagerApp" location="${appLocation}" type="war"/>
+    <application name="TicketManager" context-root="/TicketManager" location="${appLocation}" type="war"/>
 
 </server>
