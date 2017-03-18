@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/fullpage/jquery.fullPage.min.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+		<script src="../vendors/jquery.easings.min.js"></script> 
+        <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+		<script type="text/javascript" src="js/vendors/jquery.slimscroll.min.js"></script>
+        <script type="text/javascript" src="js/fullpage/jquery.fullPage.min.js"></script>
+        <title>Test</title>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    sectionsColor: ['#f2f2f2','#4BBFC3','#7BAABE','whitesmoke'],
+                    css3: true,
+					navigation: false,
+                });
+            });
+        </script>
+        <style type="text/css">
+        .section{
+            font-size:6em;
+            text-align:center;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="fullpage">
+            <div class="section">Section 1
+				<a href="">siguiente</a>
+				<input type="button" value="uno"/>
+			</div>
+            <div class="section">
+                <div class="slide">Slide 1</div>
+                <div class="slide">Slide 2</div>
+                <div class="slide">Slide 3</div>
+            </div>
+            <div class="section">Sction 2</div>
+            <div class="section">Sction 3</div>
+        </div>
+    </body>
+</html>
